@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="accountService" class="org.example.service.impl.AccountServiceImpl">
+        <property name="myStrs">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </array>
+        </property>
+        <!--        <property name="name" value="test"></property>-->
+        <!--        <property name="age" value="23"></property>-->
+        <!--        <property name="birthday" ref="now"></property>-->
+        <property name="myList">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </set>
+        </property>
+        <property name="myMap">
+            <props>
+                <prop key="test444">444 </prop>
+                <prop key="te777">777</prop>
+            </props>
+        </property>
+        <property name="myProps">
+
+            <map>
+                <entry key="test1" value="aaa"></entry>
+                <entry key="test2">
+                    <value>bbb</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <!--        <constructor-arg name="name" value="test"></constructor-arg>-->
+
+    <!--        <constructor-arg name="age" value="18"></constructor-arg>-->
+    <!--        <constructor-arg name="birthday" ref="now"></constructor-arg>-->
+    <!--    </bean>-->
+    <bean id="now" class="java.util.Date"></bean>
+    <!--    <bean id="accountDao" class="org.example.dao.impl.AccountDaoImpl"></bean>-->
+    <!--    <bean id = "instanceFactory" class="org.example.factory.InstanceFactory">-->
+    <!--    </bean>-->
+    <!--    <bean id = "accountService" factory-bean="instanceFactory" factory-method="getAccountService">-->
+    <!--    </bean>-->
+    <!--    <bean id="accountService" class="org.example.factory.InstanceFactory" factory-method="getAccountService"></bean>-->
+</beans>
