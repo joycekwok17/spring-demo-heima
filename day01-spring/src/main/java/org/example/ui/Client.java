@@ -1,24 +1,36 @@
 package org.example.ui;
 
 import org.example.dao.IAccountDao;
+import org.example.dao.impl.AccountDaoImpl;
 import org.example.service.IAccountService;
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Arrays;
+
 /**
+ * The type Client.
+ *
  * @author Xuanchi Guo
- * @project Spring-demo
- * @created 7/6/23
+ * @project Spring -demo
+ * @created 7 /6/23
  */
-// this class is used
 public class Client {
-    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws BeansException the beans exception
+     */
+    public static void main(String[] args) throws BeansException {
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-        IAccountService as1 = (IAccountService) ac.getBean("accountService");
-        as1.saveAccount();
-//        IAccountService as2 = (IAccountService) ac.getBean("accountService");
-//        System.out.println(as1);
-//        System.out.println(as2);
-//        System.out.println(as1 == as2);
+//        System.out.println("Bean names: " + Arrays.toString(ac.getBeanNamesForType(AccountDaoImpl.class)));
+
+//        IAccountService as = (IAccountService) ac.getBean("accountService");
+        IAccountDao adao = (IAccountDao) ac.getBean("accountDao");
+//        System.out.println(as);
+        System.out.println(adao);
+
     }
 }

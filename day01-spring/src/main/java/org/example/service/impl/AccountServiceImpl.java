@@ -6,9 +6,11 @@ import org.example.service.IAccountService;
 import java.util.*;
 
 /**
+ * The type Account service.
+ *
  * @author Xuanchi Guo
- * @project Spring-demo
- * @created 7/6/23
+ * @project Spring -demo
+ * @created 7 /6/23
  */
 //
 public class AccountServiceImpl implements IAccountService {
@@ -18,22 +20,47 @@ public class AccountServiceImpl implements IAccountService {
     private Map<String,String> myMap;
     private Properties myProps;
 
+    /**
+     * Sets my strs.
+     *
+     * @param myStrs the my strs
+     */
     public void setMyStrs(String[] myStrs) {
         this.myStrs = myStrs;
     }
 
+    /**
+     * Sets my list.
+     *
+     * @param myList the my list
+     */
     public void setMyList(List<String> myList) {
         this.myList = myList;
     }
 
+    /**
+     * Sets my set.
+     *
+     * @param mySet the my set
+     */
     public void setMySet(Set<String> mySet) {
         this.mySet = mySet;
     }
 
+    /**
+     * Sets my map.
+     *
+     * @param myMap the my map
+     */
     public void setMyMap(Map<String, String> myMap) {
         this.myMap = myMap;
     }
 
+    /**
+     * Sets my props.
+     *
+     * @param myProps the my props
+     */
     public void setMyProps(Properties myProps) {
         this.myProps = myProps;
     }

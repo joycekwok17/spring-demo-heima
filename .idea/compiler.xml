@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="day02-anno-ioc" />
         <module name="day01-jdbc" />
         <module name="day01-spring" />
       </profile>
