@@ -3,8 +3,12 @@ package org.example.test;
 import org.example.domain.Account;
 import org.example.service.IAccountService;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
@@ -13,13 +17,14 @@ import java.util.List;
  * @project Spring-demo
  * @created 7/7/23
  */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath:bean.xml") // if you have multiple xml files, you can use {"classpath:bean.xml", "classpath:bean2.xml"}
 public class AccountServiceTest {
+    @Autowired
+    private IAccountService as;
     @Test
     public void testFindAll() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-        // get the bean
-        IAccountService as = (IAccountService) ac.getBean("accountService");
-        // execute method
+           // execute method
         List<Account> accounts = as.findAllAccount();
         for (Account account : accounts) {
             System.out.println(account);
@@ -28,20 +33,14 @@ public class AccountServiceTest {
 
     @Test
     public void testFindOne() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-        // get the bean
-        IAccountService as = (IAccountService) ac.getBean("accountService");
-        // execute method
+     // execute method
         Account account = as.findAccountById(1);
         System.out.println(account);
     }
 
     @Test
     public void testSave() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-        // get the bean
-        IAccountService as = (IAccountService) ac.getBean("accountService");
-        // execute method
+       // execute method
         Account account = new Account();
         account.setUsername("test");
         account.setPassword("test");
@@ -51,9 +50,6 @@ public class AccountServiceTest {
 
     @Test
     public void testUpdate() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-        // get the bean
-        IAccountService as = (IAccountService) ac.getBean("accountService");
         // execute method
         Account account = as.findAccountById(3);
         account.setUsername("test_update");
@@ -64,9 +60,6 @@ public class AccountServiceTest {
 
     @Test
     public void testDelete() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-        // get the bean
-        IAccountService as = (IAccountService) ac.getBean("accountService");
         // execute method
         as.deleteAccount(4);
         as.findAllAccount().forEach(System.out::println);
