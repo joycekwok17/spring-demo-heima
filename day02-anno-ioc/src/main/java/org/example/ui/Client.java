@@ -15,9 +15,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Client {
     public static void main(String[] args) throws BeansException {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         IAccountService as1 = (IAccountService) ac.getBean("accountService");
+//        IAccountService as2 = (IAccountService) ac.getBean("accountService");
+//        System.out.println(as1 == as2);
         as1.saveAccount();
-
+//        ac.close();
     }
 }

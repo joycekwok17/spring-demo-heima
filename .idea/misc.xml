@@ -7,12 +7,11 @@
         <option value="$PROJECT_DIR$/day01-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/day01-spring/pom.xml" />
         <option value="$PROJECT_DIR$/day02-anno-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/day02-account-xml-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/day02-account-account-anno-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/day02-account-anno-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/day02-account-anno-ioc-withoutxml/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/day01-spring/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">

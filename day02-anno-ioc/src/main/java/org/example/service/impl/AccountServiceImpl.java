@@ -4,7 +4,11 @@ import org.example.dao.IAccountDao;
 import org.example.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 /**
  * The type Account service.
@@ -25,14 +29,22 @@ import org.springframework.stereotype.Service;
  */
 
 @Service("accountService")
+//@Scope("prototype") // default is singleton
 public class AccountServiceImpl implements IAccountService {
 
     @Autowired // byType injection
-    @Qualifier("accountDao2")
-    // byName injection (if there are multiple beans with same type) (use this annotation with @Autowired)
+    @Qualifier("accountDao2") // byName injection (if there are multiple beans with same type) (use this annotation with @Autowired)
 //    @Resource(name = "accountDao2")
     private IAccountDao accountDao;
 
+    @PostConstruct
+    public void init() {
+        System.out.println("init");
+    }
+    @PreDestroy
+    public void destroy() {
+        System.out.println("destroy");
+    }
     @Override
     public void saveAccount() {
         accountDao.saveAccount();
