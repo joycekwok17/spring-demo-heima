@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="day02-anno-ioc" />
         <module name="day01-jdbc" />
-        <module name="day01-spring" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day01-spring" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -4,12 +4,7 @@ import org.example.dao.IAccountDao;
 import org.example.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
-import java.util.*;
 
 /**
  * The type Account service.
@@ -29,13 +24,14 @@ import java.util.*;
  * @created 7 /6/23
  */
 
-@Service
-public class AccountServiceImpl
-        implements IAccountService {
-//    @Autowired // byType injection
-//    @Qualifier("accountDao2") // byName injection (if there are multiple beans with same type) (use this annotation with @Autowired)
-    @Resource(name = "accountDao2")
-    private IAccountDao accountDao = null;
+@Service("accountService")
+public class AccountServiceImpl implements IAccountService {
+
+    @Autowired // byType injection
+    @Qualifier("accountDao2")
+    // byName injection (if there are multiple beans with same type) (use this annotation with @Autowired)
+//    @Resource(name = "accountDao2")
+    private IAccountDao accountDao;
 
     @Override
     public void saveAccount() {
