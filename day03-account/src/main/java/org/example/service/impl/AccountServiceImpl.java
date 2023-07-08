@@ -3,6 +3,7 @@ package org.example.service.impl;
 import org.example.dao.IAccountDao;
 import org.example.domain.Account;
 import org.example.service.IAccountService;
+import org.example.utils.TransactionManager;
 
 import java.util.List;
 
@@ -13,6 +14,11 @@ import java.util.List;
  */
 public class AccountServiceImpl implements IAccountService {
     private IAccountDao accountDao;
+//    private TransactionManager txManager; // 事务管理器 用于管理事务 事务的开启 提交 回滚和释放
+//
+//    public void setTxManager(TransactionManager txManager) {
+//        this.txManager = txManager;
+//    }
 
     public void setAccountDao(IAccountDao accountDao) {
         this.accountDao = accountDao;
@@ -41,5 +47,21 @@ public class AccountServiceImpl implements IAccountService {
     @Override
     public void deleteAccount(Integer accountId) {
         accountDao.deleteAccount(accountId);
+    }
+
+    @Override
+    public void transfer(String sourceName, String targetName, float money) {
+        // 2.1 find source account
+        Account source = accountDao.findAccountByName(sourceName);
+        // 2.2 find target account
+        Account target = accountDao.findAccountByName(targetName);
+        // 2.3 source account - money
+        source.setMoney(source.getMoney() - money);
+        // 2.4 target account + money
+        target.setMoney(target.getMoney() + money);
+        // 2.5 update source account
+        accountDao.updateAccount(source);
+        // 2.6 update target account
+        accountDao.updateAccount(target);
     }
 }

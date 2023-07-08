@@ -15,5 +15,5 @@ public interface IAccountService {
     void saveAccount(Account account);
     void updateAccount(Account account);
     void deleteAccount(Integer accountId);
-    void transfer(String sourceName, String targetName, String password);
+    void transfer(String sourceName, String targetName, float money);
 }

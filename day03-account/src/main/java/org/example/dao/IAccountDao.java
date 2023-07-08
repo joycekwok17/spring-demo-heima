@@ -15,4 +15,5 @@ public interface IAccountDao {
     void saveAccount(Account account);
     void updateAccount(Account account);
     void deleteAccount(Integer accountId);
+    Account findAccountByName(String accountName);
 }

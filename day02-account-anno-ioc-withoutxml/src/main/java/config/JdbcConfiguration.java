@@ -31,7 +31,7 @@ public class JdbcConfiguration {
     }
 
     @Bean(name = "dataSource")
-    public DataSource createDataSource(){
+    public DataSource createDataSource() {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         try {
             dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");

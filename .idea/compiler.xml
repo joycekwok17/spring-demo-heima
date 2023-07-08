@@ -9,6 +9,7 @@
         <module name="day02-account-anno-ioc (2)" />
         <module name="day02-account-anno-ioc (1)" />
         <module name="day02-account-xml-ioc (1)" />
+        <module name="day03-proxy" />
         <module name="day02-anno-ioc" />
         <module name="day01-jdbc" />
         <module name="day01-spring" />

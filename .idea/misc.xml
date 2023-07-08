@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/day02-account-anno-ioc/pom.xml" />
         <option value="$PROJECT_DIR$/day02-account-anno-ioc-withoutxml/pom.xml" />
         <option value="$PROJECT_DIR$/day03-account/pom.xml" />
+        <option value="$PROJECT_DIR$/day03-proxy/pom.xml" />
       </list>
     </option>
   </component>
