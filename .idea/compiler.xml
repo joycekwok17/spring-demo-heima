@@ -16,6 +16,7 @@
         <module name="day02-anno-ioc" />
         <module name="day01-jdbc" />
         <module name="day01-spring" />
+        <module name="day02-account-xml-ioc (3)" />
         <module name="day02-account-xml-ioc (2)" />
       </profile>
     </annotationProcessing>

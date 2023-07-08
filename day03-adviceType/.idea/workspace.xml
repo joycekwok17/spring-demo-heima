@@ -5,10 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87d828dd-af1f-482f-b395-b062569a3a7a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../day02-account-anno-ioc-withoutxml/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day02-account-anno-ioc-withoutxml/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03-account/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03-account/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03-account/src/test/java/org/example/test/AccountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day03-account/src/test/java/org/example/test/AccountServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/config/JdbcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/config/SpringConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/dao/IAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/factory/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/utils/ConnectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/java/org/example/utils/TransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/main/resources/jdbcConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/test/java/org/example/test/AccountServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-account2/src/test/java/org/example/test/AccountServiceTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +54,12 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/xc/IdeaProjects/Spring-demo/day03-adviceType",
+    "last_opened_file_path": "/home/xc/IdeaProjects/Spring-demo/day03-annoAOP",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "51a437cf9ac2a63f36b360dc64e80046",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -51,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688837028828</updated>
       <workItem from="1688837029816" duration="1143000" />
+      <workItem from="1688840238456" duration="37000" />
     </task>
     <servers />
   </component>
