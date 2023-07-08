@@ -59,7 +59,7 @@ public class AccountServiceImpl implements IAccountService {
         target.setMoney(target.getMoney() + money);
         // 2.5 update source account
         accountDao.updateAccount(source);
-        int i = 1 / 0;
+//        int i = 1 / 0;
         // 2.6 update target account
         accountDao.updateAccount(target);
     }
