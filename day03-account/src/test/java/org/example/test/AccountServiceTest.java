@@ -18,16 +18,17 @@ import java.util.List;
  * @project Spring-demo
  * @created 7/7/23
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:bean.xml") // if you have multiple xml files, you can use {"classpath:bean.xml", "classpath:bean2.xml"}
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(locations = "classpath:bean.xml") // if you have multiple xml files, you can use {"classpath:bean.xml", "classpath:bean2.xml"}
 public class AccountServiceTest {
-    @Qualifier("proxyAccountService")
-    @Autowired
-    private IAccountService as;
+//    @Qualifier("proxyAccountService")
+//    @Autowired
+    private IAccountService as = new ClassPathXmlApplicationContext("bean.xml")
+        .getBean("accountService", IAccountService.class);
 
     @Test
     public void testTransfer() {
-        as.transfer("aaa", "bbb", 100f);
+        as.transfer("bbb", "ccc", 100f);
     }
 
     @Test
@@ -37,4 +38,5 @@ public class AccountServiceTest {
             System.out.println(account);
         }
     }
+
 }

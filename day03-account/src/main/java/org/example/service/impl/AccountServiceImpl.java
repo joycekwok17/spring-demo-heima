@@ -1,6 +1,7 @@
 package org.example.service.impl;
 
 import org.example.dao.IAccountDao;
+import org.example.dao.impl.AccountDaoImpl;
 import org.example.domain.Account;
 import org.example.service.IAccountService;
 import org.example.utils.TransactionManager;
@@ -20,9 +21,6 @@ public class AccountServiceImpl implements IAccountService {
 //        this.txManager = txManager;
 //    }
 
-    public void setAccountDao(IAccountDao accountDao) {
-        this.accountDao = accountDao;
-    }
 
     @Override
     public List<Account> findAllAccount() {
@@ -61,7 +59,12 @@ public class AccountServiceImpl implements IAccountService {
         target.setMoney(target.getMoney() + money);
         // 2.5 update source account
         accountDao.updateAccount(source);
+        int i = 1 / 0;
         // 2.6 update target account
         accountDao.updateAccount(target);
+    }
+
+    public void setAccountDao(AccountDaoImpl accountDao) {
+        this.accountDao = accountDao;
     }
 }
