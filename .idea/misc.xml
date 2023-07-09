@@ -17,6 +17,11 @@
         <option value="$PROJECT_DIR$/day03-adviceType/pom.xml" />
         <option value="$PROJECT_DIR$/day03-annoAOP/pom.xml" />
         <option value="$PROJECT_DIR$/day03-account2/pom.xml" />
+        <option value="$PROJECT_DIR$/day03-account-xml-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/day03-account-anno-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/day04-jdbctemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/day03-account-tx-xml-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/day03-account-tx-anno-aop/pom.xml" />
       </list>
     </option>
   </component>

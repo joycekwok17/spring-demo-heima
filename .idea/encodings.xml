@@ -9,10 +9,10 @@
     <file url="file://$PROJECT_DIR$/day02-account-xml-ioc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day02-anno-ioc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day02-anno-ioc/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/day03-account/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/day03-account/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/day03-account2/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/day03-account2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03-account-tx-anno-aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03-account-tx-anno-aop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03-account-tx-xml-aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day03-account-tx-xml-aop/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day03-adviceType/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day03-adviceType/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day03-annoAOP/src/main/java" charset="UTF-8" />
@@ -21,5 +21,7 @@
     <file url="file://$PROJECT_DIR$/day03-proxy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day03-springAOP/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day03-springAOP/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04-jdbctemplate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04-jdbctemplate/src/main/resources" charset="UTF-8" />
   </component>
 </project>
