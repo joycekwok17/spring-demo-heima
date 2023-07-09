@@ -1,5 +1,6 @@
 package org.example.utils;
 
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,10 +19,6 @@ public class TransactionManager {
 
     @Autowired
     private ConnectionUtils connectionUtils;
-
-//    public void setConnectionUtils(ConnectionUtils connectionUtils) {
-//        this.connectionUtils = connectionUtils;
-//    }
 
     /**
      * configure pointcut
@@ -88,4 +85,26 @@ public class TransactionManager {
         }
 
     }
+
+    /**
+     * around advice
+     *
+     * @param proceedingJoinPoint
+     * @return
+     */
+//    @Around("pt1()")
+//    public Object aroundAdvice(ProceedingJoinPoint proceedingJoinPoint) {
+//        try {
+//            Object[] args = proceedingJoinPoint.getArgs();
+//            this.beginTransaction();
+//            Object rtValue = proceedingJoinPoint.proceed(args);
+//            this.commit();
+//            return rtValue;
+//        } catch (Throwable e) {
+//            this.rollback();
+//            throw new RuntimeException(e);
+//        } finally {
+//            this.release();
+//        }
+//    }
 }

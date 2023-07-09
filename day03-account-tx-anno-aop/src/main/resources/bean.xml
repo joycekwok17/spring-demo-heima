@@ -9,7 +9,19 @@
            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
+
     <context:component-scan base-package="org.example"/>
+
+    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
+    </bean>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/newDB"></property>
+        <property name="user" value="root"></property>
+        <property name="password" value="password"></property>
+    </bean>
+
     <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 
 

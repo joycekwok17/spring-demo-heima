@@ -16,7 +16,6 @@ import java.util.List;
  * @project Spring-demo
  * @created 7/7/23
  */
-@Repository("accountDao")
 public class AccountDaoImpl implements IAccountDao {
     @Autowired
     private QueryRunner runner; // 用于执行sql语句

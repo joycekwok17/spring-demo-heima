@@ -15,16 +15,9 @@ import java.util.List;
  * @project Spring-demo
  * @created 7/7/23
  */
-@Service("accountService")
 public class AccountServiceImpl implements IAccountService {
     @Autowired
     private IAccountDao accountDao;
-//    private TransactionManager txManager; // 事务管理器 用于管理事务 事务的开启 提交 回滚和释放
-//
-//    public void setTxManager(TransactionManager txManager) {
-//        this.txManager = txManager;
-//    }
-
 
     @Override
     public List<Account> findAllAccount() {

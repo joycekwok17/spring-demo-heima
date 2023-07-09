@@ -24,6 +24,7 @@ public class TransactionManager {
     public void beginTransaction() { // if change to beginTransaction2, then have to modify many places in AccountServiceImpl_OLD.java
         // strong coupling here, use proxy to solve this problem
         try {
+            System.out.println("beginTransaction");
             connectionUtils.getThreadConnection().setAutoCommit(false);
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -62,6 +63,7 @@ public class TransactionManager {
      */
     public void release() {
         try {
+            System.out.println("release");
             connectionUtils.getThreadConnection().close(); // close connection
             connectionUtils.removeConnection(); // remove connection from threadLocal
         } catch (Exception e) {

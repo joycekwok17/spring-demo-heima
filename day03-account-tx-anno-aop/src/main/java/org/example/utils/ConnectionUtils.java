@@ -18,10 +18,6 @@ public class ConnectionUtils {
     @Autowired
     private DataSource dataSource;
 
-//    public void setDataSource(DataSource dataSource) {
-//        this.dataSource = dataSource;
-//    }
-
     public Connection getThreadConnection() {
         try {
             Connection conn = tl.get(); // get connection from threadLocal

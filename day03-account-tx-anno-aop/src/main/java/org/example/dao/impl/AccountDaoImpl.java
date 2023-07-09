@@ -18,20 +18,13 @@ import java.util.List;
  */
 @Repository("accountDao")
 public class AccountDaoImpl implements IAccountDao {
+
     @Autowired
     private QueryRunner runner; // 用于执行sql语句
 
     @Autowired
     private ConnectionUtils connectionUtils; // 用于获取当前线程的连接
 
-
-//    public void setRunner(QueryRunner runner) {
-//        this.runner = runner;
-//    }
-
-//    public void setConnectionUtils(ConnectionUtils connectionUtils) {
-//        this.connectionUtils = connectionUtils;
-//    }
 
     @Override
     public List<Account> findAllAccount() {
