@@ -22,6 +22,10 @@
         <option value="$PROJECT_DIR$/day04-jdbctemplate/pom.xml" />
         <option value="$PROJECT_DIR$/day03-account-tx-xml-aop/pom.xml" />
         <option value="$PROJECT_DIR$/day03-account-tx-anno-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/day04-tx/pom.xml" />
+        <option value="$PROJECT_DIR$/day04-tx-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/day04-tx-anno/pom.xml" />
+        <option value="$PROJECT_DIR$/day04-tx-anno-withoutxml/pom.xml" />
       </list>
     </option>
   </component>

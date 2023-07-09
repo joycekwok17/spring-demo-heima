@@ -2,6 +2,7 @@ package org.example.test;
 
 import org.example.domain.Account;
 import org.example.service.IAccountService;
+import org.example.utils.TransactionManager;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.PlatformTransactionManager;
 
+import java.lang.management.PlatformLoggingMXBean;
 import java.util.List;
 
 /**
@@ -23,7 +26,7 @@ import java.util.List;
 public class AccountServiceTest {
     @Autowired
     private IAccountService as;
-
+PlatformTransactionManager ptm;
     @Test
     public void testTransfer() {
         as.transfer("ddd", "ccc", 100f);

@@ -7,15 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="day03-proxy" />
+        <module name="day04-jdbctemplate (2)" />
+        <module name="day04-jdbctemplate (3)" />
         <module name="day02-anno-ioc" />
         <module name="day01-jdbc" />
+        <module name="day04-jdbctemplate (1)" />
         <module name="day02-account-anno-ioc (2)" />
         <module name="day02-account-anno-ioc (1)" />
         <module name="day02-account-xml-ioc (1)" />
         <module name="day03-springAOP (3)" />
-        <module name="day04-jdbctemplate" />
         <module name="day03-springAOP (1)" />
+        <module name="day04-jdbctemplate (4)" />
         <module name="day03-springAOP (2)" />
+        <module name="day04-jdbctemplate (5)" />
         <module name="day01-spring" />
         <module name="day02-account-xml-ioc (3)" />
         <module name="day02-account-xml-ioc (2)" />
@@ -26,6 +30,7 @@
       <module name="day02-account-xml-ioc" target="17" />
       <module name="day03-account-xml-aop" target="17" />
       <module name="day03-springAOP" target="17" />
+      <module name="day04-jdbctemplate" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
