@@ -21,6 +21,8 @@
     <file url="file://$PROJECT_DIR$/day03-proxy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day03-springAOP/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day03-springAOP/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04-account-tx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day04-account-tx/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day04-jdbctemplate/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day04-jdbctemplate/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day04-tx-anno-withoutxml/src/main/java" charset="UTF-8" />

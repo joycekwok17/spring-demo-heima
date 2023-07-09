@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/day04-tx-xml/pom.xml" />
         <option value="$PROJECT_DIR$/day04-tx-anno/pom.xml" />
         <option value="$PROJECT_DIR$/day04-tx-anno-withoutxml/pom.xml" />
+        <option value="$PROJECT_DIR$/day04-account-tx/pom.xml" />
       </list>
     </option>
   </component>

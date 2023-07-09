@@ -16,6 +16,7 @@
         <module name="day02-account-anno-ioc (1)" />
         <module name="day02-account-xml-ioc (1)" />
         <module name="day03-springAOP (3)" />
+        <module name="day04-jdbctemplate (6)" />
         <module name="day03-springAOP (1)" />
         <module name="day04-jdbctemplate (4)" />
         <module name="day03-springAOP (2)" />
@@ -28,6 +29,7 @@
     <bytecodeTargetLevel>
       <module name="day02-account-anno-ioc" target="17" />
       <module name="day02-account-xml-ioc" target="17" />
+      <module name="day02-account-xml-ioc (4)" target="17" />
       <module name="day03-account-xml-aop" target="17" />
       <module name="day03-springAOP" target="17" />
       <module name="day04-jdbctemplate" target="17" />
