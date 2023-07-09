@@ -37,6 +37,7 @@ public class TransactionManager {
     public void commit() {
         try {
             connectionUtils.getThreadConnection().commit();
+            System.out.println("commit");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -49,6 +50,7 @@ public class TransactionManager {
     public void rollback() {
         try {
             connectionUtils.getThreadConnection().rollback();
+            System.out.println("rollback");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

@@ -5,8 +5,6 @@ import org.example.dao.impl.AccountDaoImpl;
 import org.example.domain.Account;
 import org.example.service.IAccountService;
 import org.example.utils.TransactionManager;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -15,9 +13,7 @@ import java.util.List;
  * @project Spring-demo
  * @created 7/7/23
  */
-@Service("accountService")
 public class AccountServiceImpl implements IAccountService {
-    @Autowired
     private IAccountDao accountDao;
 //    private TransactionManager txManager; // 事务管理器 用于管理事务 事务的开启 提交 回滚和释放
 //
@@ -63,12 +59,12 @@ public class AccountServiceImpl implements IAccountService {
         target.setMoney(target.getMoney() + money);
         // 2.5 update source account
         accountDao.updateAccount(source);
-//        int i = 1 / 0;
+        int i = 1 / 0;
         // 2.6 update target account
         accountDao.updateAccount(target);
     }
 
-//    public void setAccountDao(AccountDaoImpl accountDao) {
-//        this.accountDao = accountDao;
-//    }
+    public void setAccountDao(AccountDaoImpl accountDao) {
+        this.accountDao = accountDao;
+    }
 }

@@ -20,24 +20,19 @@ import java.util.List;
 @ContextConfiguration(classes = org.example.config.SpringConfiguration.class)
 public class AccountServiceTest2 {
     @Autowired
-    static
     IAccountService as;
-    public static void main(String[] args) {
+    @Test
+    public void testFindAll() {
+        // execute method
+        List<Account> accounts = as.findAllAccount();
+        for (Account account : accounts) {
+            System.out.println(account);
+        }
+    }
 
+    @Test
+    public void testTransfer() {
+        // execute method
         as.transfer("ccc", "aaa", 100f);
     }
-//    @Test
-//    public void testFindAll() {
-//        // execute method
-//        List<Account> accounts = as.findAllAccount();
-//        for (Account account : accounts) {
-//            System.out.println(account);
-//        }
-//    }
-//
-//    @Test
-//    public void testTransfer() {
-//        // execute method
-//        as.transfer("ccc", "aaa", 100f);
-//    }
 }
